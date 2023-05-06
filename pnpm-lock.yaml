@@ -1,12 +1,21 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@types/node':
+    specifier: ^18.16.3
+    version: 18.16.3
+  clsx:
+    specifier: ^1.2.1
+    version: 1.2.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  soundfont-player:
+    specifier: ^0.12.0
+    version: 0.12.0
 
 devDependencies:
   '@types/react':
@@ -38,7 +47,7 @@ devDependencies:
     version: 5.0.2
   vite:
     specifier: ^4.3.2
-    version: 4.3.2
+    version: 4.3.2(@types/node@18.16.3)
 
 packages:
 
@@ -434,6 +443,9 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
+  /@types/node@18.16.3:
+    resolution: {integrity: sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==}
+
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
@@ -596,7 +608,7 @@ packages:
       vite: ^4.0.0
     dependencies:
       '@swc/core': 1.3.56
-      vite: 4.3.2
+      vite: 4.3.2(@types/node@18.16.3)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -614,6 +626,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /adsr@1.0.1:
+    resolution: {integrity: sha512-thr9LK4jxApOzBA33IWOA83bXJFbyfbeozpHXyrMQOIhUni198uRxXqDhobW0S/51iokqty2Yz2WbLZbE6tntQ==}
+    dev: false
 
   /ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
@@ -645,6 +661,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /audio-loader@0.5.0:
+    resolution: {integrity: sha512-mEoYRjZhqkBSen/X9i2PNosqvafEsur8bI5MNoPr0wsJu9Nzlul3Yv1elYeMPsXxTxYhXLY8AZlScBvaK4mydg==}
+    dev: false
+
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
@@ -675,6 +695,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1146,6 +1171,10 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /midimessage@1.0.5:
+    resolution: {integrity: sha512-MPJ2tDupFOfZB5/PLp8fri1IS4fd9hPj0Bio//FBhWRQ+TsJA7/49CF1aJyraDxa0Jq8zMHAwrwXl2GINvLvgw==}
+    dev: false
+
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
@@ -1169,6 +1198,14 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /note-parser@1.1.0:
+    resolution: {integrity: sha512-YTqWQBsRp40EFrEznnkGtmx68gcgOQ8CdoBspqGBA3G1/4mJwIYbDe/vuNpX3oGX2DhP7b1dBgTmj7p3Zr0P1Q==}
+    dev: false
+
+  /note-parser@2.0.1:
+    resolution: {integrity: sha512-w9o6Fv46y3NsFxeezTZSmftBtUM/ypme6iZWVrTJvvsD5RN+w0XNDePWtfreNrZFL3jSjBFhadPoXb+pJO4UdA==}
+    dev: false
 
   /once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
@@ -1309,6 +1346,14 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /sample-player@0.5.5:
+    resolution: {integrity: sha512-VQ9pXPJ1m/eTH8QK6OQ8Dn/HSVToNyY9w9vnv+y/yjkJeRm87tJ/gBEm66jItfSLhKe6VG1DfX8+oT+Mg7QUpg==}
+    dependencies:
+      adsr: 1.0.1
+      midimessage: 1.0.5
+      note-parser: 1.1.0
+    dev: false
+
   /scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
@@ -1339,6 +1384,14 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
     dev: true
+
+  /soundfont-player@0.12.0:
+    resolution: {integrity: sha512-8BJIsAt7h1PK3thSZDgF6zecgGhYkK74JnZO8WRZi3h34qG6H/DYlnv7cpRvL7Q9C8N6qld4Qwj7nJsX1gYjEA==}
+    dependencies:
+      audio-loader: 0.5.0
+      note-parser: 2.0.1
+      sample-player: 0.5.5
+    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
@@ -1413,7 +1466,7 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite@4.3.2:
+  /vite@4.3.2(@types/node@18.16.3):
     resolution: {integrity: sha512-9R53Mf+TBoXCYejcL+qFbZde+eZveQLDYd9XgULILLC1a5ZwPaqgmdVpL8/uvw2BM/1TzetWjglwm+3RO+xTyw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1438,6 +1491,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.16.3
       esbuild: 0.17.18
       postcss: 8.4.23
       rollup: 3.21.5
